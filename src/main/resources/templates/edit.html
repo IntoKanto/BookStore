@@ -34,6 +34,11 @@ xmlns:th="http://www.thymeleaf.org">
 			<select id="blist" th:field="*{category}" class="form-control">
        		<option th:each="cat: ${categories}" th:value="${cat.cid}" th:text="${cat.name}"></option>
     		</select>
+    		
+    		<form th:action="@{/logout}" method="post">
+    	
+            	<input type="submit" value="Sign Out"/>
+        	</form>
 
 
 

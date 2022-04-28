@@ -66,6 +66,11 @@ public class bookController {
 	 public @ResponseBody Optional<Book> findBookRest(@PathVariable("id") Long bookid) {
 		 return brepo.findById(bookid);
 	 }
+	 
+	 @RequestMapping(value="/login")
+		public String login() {
+			return "login";
+		}    
 	
 	
 	
